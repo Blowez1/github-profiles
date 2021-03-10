@@ -11,6 +11,7 @@
 <script>
 import Profile from "./Profile";
 
+
 export default {
   name: "app",
   components: {
