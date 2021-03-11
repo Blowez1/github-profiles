@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+![image](https://i.hizliresim.com/pg0usK.jpg)
+
 ## Build Setup
 
 ``` bash
