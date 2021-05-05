@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h4>User Name :</h4>
+    <h4 class="white">User Name :</h4>
     <input type="text" v-on:keyup.enter="refreshData()" v-model="userName" class="form-control bb--input mb-4" />
 
-    <div class="bb-card">
+    <div class="bb-card mb-4">
       <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3">
           <a target="_BLANK" :href="user.html_url"><img class="user__img" :src="user.avatar_url" :alt="user.login" /></a>
         </div>
-        <div class="col-9">
+        <div class="col-lg-9 mt-lg-0 mt-3">
           <div class="d-flex align-items-center mb-3">
               <span class="user__name h3 mr-3" style="margin-bottom : 0px"><a target="_BLANK" :href="user.html_url">{{user.login}}</a></span>
             <span class="user__location d-flex align-items-center">
@@ -22,7 +22,6 @@
             <path id="placeholder" d="M1.75,0a8.009,8.009,0,0,0-8,8c0,5.544,8.008,15.015,8.008,15.015S9.75,13.272,9.75,8A8.009,8.009,0,0,0,1.75,0ZM4.164,10.342a3.414,3.414,0,1,1,0-4.827A3.4,3.4,0,0,1,4.164,10.342Zm0,0" transform="translate(6.25)" fill="url(#linear-gradient)"/>
             </svg> {{user.location}}</span>
           </div>
-
           <p class="user__desc mb-3">
             {{user.bio}}
           </p>
@@ -77,6 +76,10 @@ export default {
 <style lang="scss">
 h4 {
   font-weight: 600;
+}
+
+.white {
+  color: #fff;
 }
 
 .bb--input {
